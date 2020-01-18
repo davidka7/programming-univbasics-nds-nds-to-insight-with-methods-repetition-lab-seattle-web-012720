@@ -38,7 +38,12 @@ def total_gross(source)
   i=0 
   array=0 
   while i<source.length do
+    column=0 
+    while column<source[i][1].length do
+      
     array+=source[i][:movies][:worldwide_gross]
+  column+=1
+  end
     i+=1
   end
   array
