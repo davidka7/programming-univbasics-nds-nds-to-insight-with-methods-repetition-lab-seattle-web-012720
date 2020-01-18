@@ -35,7 +35,13 @@ end
 end
 
 def total_gross(source)
-  pp source
+  i=0 
+  array=0 
+  while i<source.length do
+    array+=source[i][:movies][:worldwide_gross]
+    i+=1
+  end
+  array
   # Write this implementation
   #
   # Should use methods:
